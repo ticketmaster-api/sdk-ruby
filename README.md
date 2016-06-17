@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/connerfritz/sdk-ruby.svg?branch=master)](https://travis-ci.org/connerfritz/sdk-ruby)
+
 Ruby SDK for the Ticketmaster Open Platform (http://developer.ticketmaster.com/).
 
 Wraps the Ticketmaster API in easy to access functions.
