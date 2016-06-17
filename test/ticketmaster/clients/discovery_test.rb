@@ -67,7 +67,7 @@ class ClientTest < Minitest::Test
   def test_get_classification
     VCR.use_cassette('get_classification') do
       client = Ticketmaster::Client.new(apikey: 'TEST')
-      results = client.get_classification('KZFzniwnSyZfZ7v7nn')
+      results = client.get_classification('KZFzniwnSyZfZ7v7nn', 'classifications')
 
       assert_equal 'KZFzniwnSyZfZ7v7nn', results.id
     end

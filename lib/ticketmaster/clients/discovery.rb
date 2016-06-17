@@ -52,10 +52,10 @@ module Ticketmaster
         Result.search(response, request, 'classifications')
       end
 
-      def get_classification(id, options={})
+      def get_classification(id, type, options={})
         options[:version] ||= 'v2'
 
-        request  = Request.new("discovery/#{options[:version]}/classifications/#{id}", {}, self)
+        request  = Request.new("discovery/#{options[:version]}/#{type}/#{id}", {}, self)
         response = request.get
         Result.create(response, request, 'Ticketmaster::Classification')
       end
