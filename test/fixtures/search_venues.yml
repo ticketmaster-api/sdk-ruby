@@ -1,0 +1,120 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://app.ticketmaster.com/discovery/v2/venues?apikey=TEST&format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '3628800'
+      Content-Type:
+      - application/hal+json;charset=utf-8
+      Date:
+      - Wed, 15 Jun 2016 14:54:36 GMT
+      Rate-Limit:
+      - '500000'
+      Rate-Limit-Available:
+      - '499973'
+      Rate-Limit-Over:
+      - '0'
+      Rate-Limit-Reset:
+      - '1466057554290'
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - CMPS=yftBuRKqgoSfziL1ph4D0MuT/2NrN8BPuIYL1l1jXggkmXwY5j38faYiUwCRt0KpTiltpL+n6lI=;
+        path=/
+      Vary:
+      - Accept-Encoding
+      X-Application-Context:
+      - application:local,default,jphx1:8080
+      X-Unknown-Params:
+      - format
+      Content-Length:
+      - '12118'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"/discovery/v2/venues?view=null{&page,size,sort}","templated":true},"next":{"href":"/discovery/v2/venues?view=null&page=1&size=20{&sort}","templated":true}},"_embedded":{"venues":[{"name":"#1
+        Please do not use, left over from UCV initial acct set up","type":"venue","id":"KovZpZAFnIEA","test":false,"url":"http://ticketmaster.ca/venue/341396","locale":"en-us","postalCode":"K0C1X0","timezone":"America/Toronto","city":{"name":"Morrisburg"},"state":{"name":"Ontario","stateCode":"ON"},"country":{"name":"Canada","countryCode":"CA"},"address":{"line1":"Crysler
+        Park Marina, 13480 County Rd 2"},"location":{"longitude":"-75.18702730","latitude":"44.94535340"},"markets":[{"id":"103"}],"dmas":[{"id":519}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZAFnIEA?locale=en-us"}}},{"name":"#2
+        Please do not use, left over from UCV initial acct set up","type":"venue","id":"KovZpZAFnIJA","test":false,"url":"http://ticketmaster.ca/venue/341395","locale":"en-us","postalCode":"K0C1X0","timezone":"America/Toronto","city":{"name":"Morrisburg"},"state":{"name":"Ontario","stateCode":"ON"},"country":{"name":"Canada","countryCode":"CA"},"address":{"line1":"13740
+        County Road 2"},"location":{"longitude":"-75.18635300","latitude":"44.89937100"},"markets":[{"id":"103"}],"dmas":[{"id":519}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZAFnIJA?locale=en-us"}}},{"name":"**DO
+        NOT USE**","type":"venue","id":"KovZpZAFIdnA","test":false,"url":"http://ticketmaster.ca/venue/337751","locale":"en-us","postalCode":"V2A8K3","timezone":"America/Vancouver","city":{"name":"Penticton"},"state":{"name":"British
+        Columbia","stateCode":"BC"},"country":{"name":"Canada","countryCode":"CA"},"address":{"line1":"Varies
+        By Event"},"location":{"longitude":"-119.52578740","latitude":"49.49535490"},"markets":[{"id":"110"}],"dmas":[{"id":518},{"id":521}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZAFIdnA?locale=en-us"}}},{"name":"**Venue
+        TBA 24 hours prior","type":"venue","id":"KovZpZAa7dJA","test":false,"url":"http://ticketmaster.ca/venue/341288","locale":"en-us","postalCode":"m5V
+        1j3","timezone":"America/Toronto","city":{"name":"Toronto"},"state":{"name":"Ontario","stateCode":"ON"},"country":{"name":"Canada","countryCode":"CA"},"address":{"line1":"1
+        Blue Jays Way"},"location":{"longitude":"-79.39174470","latitude":"43.64173840"},"markets":[{"id":"102"}],"dmas":[{"id":501},{"id":502},{"id":503},{"id":508},{"id":509},{"id":510},{"id":511},{"id":527}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZAa7dJA?locale=en-us"}}},{"name":"*do
+        not use**","type":"venue","id":"KovZpZAEdvEA","test":false,"url":"http://ticketmaster.com/venue/339104","locale":"en-us","postalCode":"02215","timezone":"America/New_York","city":{"name":"Boston"},"state":{"name":"Massachusetts","stateCode":"MA"},"country":{"name":"United
+        States Of America","countryCode":"US"},"address":{"line1":"69 Kilmarnok St"},"markets":[{"id":"11"}],"dmas":[{"id":235}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZAEdvEA?locale=en-us"}}},{"name":"*Various
+        Venues*","type":"venue","id":"KovZpZAFttdA","test":false,"url":"http://ticketmaster.ca/venue/339924","locale":"en-us","postalCode":"B3K
+        5M7","timezone":"America/Halifax","city":{"name":"Halifax"},"state":{"name":"Nova
+        Scotia","stateCode":"NS"},"country":{"name":"Canada","countryCode":"CA"},"address":{"line1":"Agricola
+        Street"},"location":{"longitude":"-63.59825270","latitude":"44.65873080"},"markets":[{"id":"101"}],"dmas":[{"id":500},{"id":512},{"id":513},{"id":514},{"id":515},{"id":516},{"id":517},{"id":520},{"id":531}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZAFttdA?locale=en-us"}}},{"name":"*Venues
+        Vary By Concert*","type":"venue","id":"KovZpZAF1E1A","test":false,"url":"http://ticketmaster.ca/venue/336045","locale":"en-us","postalCode":"K1N1A3","timezone":"America/Toronto","city":{"name":"Ottawa"},"state":{"name":"Ontario","stateCode":"ON"},"country":{"name":"Canada","countryCode":"CA"},"address":{"line1":"See
+        www.musicandbeyond.ca for full details"},"location":{"longitude":"-75.68268800","latitude":"45.42993010"},"markets":[{"id":"103"},{"id":"111"}],"dmas":[{"id":504},{"id":507},{"id":519},{"id":528},{"id":529}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZAF1E1A?locale=en-us"}}},{"name":"*Venues
+        Vary By Concert*","type":"venue","id":"KovZpZAdI7nA","test":false,"url":"http://ticketmaster.ca/venue/338158","locale":"en-us","postalCode":"L4M4Y6","timezone":"America/Toronto","city":{"name":"Barrie"},"state":{"name":"Ontario","stateCode":"ON"},"country":{"name":"Canada","countryCode":"CA"},"address":{"line1":"See
+        www.huroniasymphony.ca for complete listings"},"location":{"longitude":"-79.68239640","latitude":"44.40031940"},"markets":[{"id":"102"}],"dmas":[{"id":501},{"id":502},{"id":511},{"id":527}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZAdI7nA?locale=en-us"}}},{"name":"*Venues
+        Vary By Concert*","type":"venue","id":"KovZpZAdInEA","test":false,"url":"http://ticketmaster.ca/venue/336280","locale":"en-us","postalCode":"V5Y1L9","timezone":"America/Vancouver","city":{"name":"Vancouver"},"state":{"name":"British
+        Columbia","stateCode":"BC"},"country":{"name":"Canada","countryCode":"CA"},"address":{"line1":"See
+        www.coastaljazz.ca for complete details"},"location":{"longitude":"-123.11018940","latitude":"49.26488720"},"markets":[{"id":"108"},{"id":"111"}],"dmas":[{"id":504},{"id":505},{"id":507},{"id":528},{"id":529}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZAdInEA?locale=en-us"}}},{"name":"*Venues
+        Vary By Event*","type":"venue","id":"KovZpZAFtekA","test":false,"url":"http://ticketmaster.ca/venue/338430","locale":"en-us","postalCode":"T2H2V9","timezone":"America/Edmonton","city":{"name":"Calgary"},"state":{"name":"Alberta","stateCode":"AB"},"country":{"name":"Canada","countryCode":"CA"},"address":{"line1":"See
+        www.calgaryreggaefestival.com for complete listings"},"location":{"longitude":"-114.07189820","latitude":"50.99843760"},"markets":[{"id":"108"}],"dmas":[{"id":505}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZAFtekA?locale=en-us"}}},{"name":"*Venues
+        Vary By Event*","type":"venue","id":"KovZpZAJtv6A","test":false,"url":"http://ticketmaster.ca/venue/338810","locale":"en-us","postalCode":"K2E
+        6N4","timezone":"America/Toronto","city":{"name":"Ottawa"},"state":{"name":"Ontario","stateCode":"ON"},"country":{"name":"Canada","countryCode":"CA"},"address":{"line1":"Contact
+        Maundy Events for full details"},"markets":[{"id":"103"}],"dmas":[{"id":519}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZAJtv6A?locale=en-us"}}},{"name":"*Venues
+        Vary By Event*","type":"venue","id":"KovZpZAFlJtA","test":false,"url":"http://ticketmaster.ca/venue/342399","locale":"en-us","postalCode":"V8W
+        3C6","timezone":"America/Vancouver","city":{"name":"Victoria"},"state":{"name":"British
+        Columbia","stateCode":"BC"},"country":{"name":"Canada","countryCode":"CA"},"address":{"line1":"See
+        www.rifflandia.com for complete venue info."},"location":{"longitude":"-123.36805490","latitude":"48.42784330"},"markets":[{"id":"111"}],"dmas":[{"id":504},{"id":507},{"id":528},{"id":529}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZAFlJtA?locale=en-us"}}},{"name":"*Venues
+        Vary By Event*","type":"venue","id":"KovZpZAavleA","test":false,"url":"http://ticketmaster.ca/venue/343760","locale":"en-us","postalCode":"V8W
+        3C6","timezone":"America/Vancouver","city":{"name":"Victoria"},"state":{"name":"British
+        Columbia","stateCode":"BC"},"country":{"name":"Canada","countryCode":"CA"},"address":{"line1":"See
+        www.rifflandia.com for complete venue information"},"location":{"longitude":"-123.36805490","latitude":"48.42784330"},"markets":[{"id":"111"}],"dmas":[{"id":504},{"id":507},{"id":528},{"id":529}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZAavleA?locale=en-us"}}},{"name":"*Venues
+        Vary By Screening*","type":"venue","id":"KovZpZAaennA","test":false,"url":"http://ticketmaster.ca/venue/337142","locale":"en-us","postalCode":"M5V3A8","timezone":"America/Toronto","city":{"name":"Toronto"},"state":{"name":"Ontario","stateCode":"ON"},"country":{"name":"Canada","countryCode":"CA"},"address":{"line1":"See
+        www.reelasian.com for full details"},"markets":[{"id":"102"}],"dmas":[{"id":501},{"id":502},{"id":503},{"id":508},{"id":509},{"id":510},{"id":511},{"id":527}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZAaennA?locale=en-us"}}},{"name":"-Venues
+        Vary By Event-","type":"venue","id":"KovZpZAFlAJA","test":false,"url":"http://ticketmaster.ca/venue/342566","locale":"en-us","postalCode":"V0N
+        1B4","timezone":"America/Vancouver","city":{"name":"Whistler"},"state":{"name":"British
+        Columbia","stateCode":"BC"},"country":{"name":"Canada","countryCode":"CA"},"address":{"line1":"4232
+        Village Stroll"},"location":{"longitude":"-122.95586440","latitude":"50.11458770"},"markets":[{"id":"111"}],"dmas":[{"id":504},{"id":507},{"id":528},{"id":529}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZAFlAJA?locale=en-us"}}},{"name":"10,000
+        Lakes Festival at Soo Pass Ranch","type":"venue","id":"KovZpa4nIe","test":false,"url":"http://ticketmaster.com/venue/49313","locale":"en-us","postalCode":"56502","timezone":"America/Chicago","city":{"name":"Detroit
+        Lakes"},"state":{"name":"Minnesota","stateCode":"MN"},"country":{"name":"United
+        States Of America","countryCode":"US"},"address":{"line1":"4 miles south of
+        Detroit Lakes on Highway 59"},"location":{"longitude":"-95.85000000","latitude":"46.82000000"},"markets":[{"id":"16"},{"id":"43"}],"dmas":[{"id":268},{"id":276},{"id":336},{"id":337},{"id":389}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpa4nIe?locale=en-us"}}},{"name":"100
+        - 500 Clematis Street","type":"venue","id":"KovZpaKbCe","test":false,"url":"http://ticketmaster.com/venue/336136","locale":"en-us","postalCode":"33401","timezone":"America/New_York","city":{"name":"West
+        Palm Beach"},"state":{"name":"Florida","stateCode":"FL"},"country":{"name":"United
+        States Of America","countryCode":"US"},"address":{"line1":"100 - 500 Clemats
+        Street"},"location":{"longitude":"-80.05558000","latitude":"26.71312300"},"markets":[{"id":"15"}],"dmas":[{"id":334},{"id":412}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpaKbCe?locale=en-us"}}},{"name":"101
+        6th Avenue","type":"venue","id":"KovZpZA1dldA","test":false,"url":"http://ticketmaster.com/venue/379","locale":"en-us","postalCode":"10013","timezone":"America/New_York","city":{"name":"New
+        York"},"state":{"name":"New York","stateCode":"NY"},"country":{"name":"United
+        States Of America","countryCode":"US"},"address":{"line1":"101 6th Avenue"},"location":{"longitude":"-74.00501560","latitude":"40.72314520"},"markets":[{"id":"35"},{"id":"55"},{"id":"124"}],"dmas":[{"id":296},{"id":345},{"id":422}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZA1dldA?locale=en-us"}}},{"name":"1015
+        FOLSOM","type":"venue","id":"KovZpZAa17tA","test":false,"url":"http://ticketmaster.com/venue/229805","locale":"en-us","postalCode":"94103","timezone":"America/Los_Angeles","city":{"name":"San
+        Francisco"},"state":{"name":"California","stateCode":"CA"},"country":{"name":"United
+        States Of America","countryCode":"US"},"address":{"line1":"1015 Folsom St"},"location":{"longitude":"-122.40991540","latitude":"37.77264020"},"markets":[{"id":"41"}],"dmas":[{"id":250},{"id":273},{"id":282},{"id":341},{"id":368},{"id":374},{"id":382}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZAa17tA?locale=en-us"}}},{"name":"1015
+        Folsom","type":"venue","id":"KovZpZAFJJaA","test":false,"url":"http://ticketmaster.com/venue/338370","locale":"en-us","postalCode":"94103","timezone":"America/Los_Angeles","city":{"name":"San
+        Francisco"},"state":{"name":"California","stateCode":"CA"},"country":{"name":"United
+        States Of America","countryCode":"US"},"address":{"line1":"1015 Folsom"},"location":{"longitude":"-122.40568100","latitude":"37.77804800"},"markets":[{"id":"41"}],"dmas":[{"id":250},{"id":273},{"id":282},{"id":341},{"id":368},{"id":374},{"id":382}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZAFJJaA?locale=en-us"}}}]},"page":{"size":20,"totalElements":22958,"totalPages":1148,"number":0}}'
+    http_version:
+  recorded_at: Wed, 15 Jun 2016 14:54:38 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://app.ticketmaster.com/discovery/v2/venues/KovZpZAFnIJA?apikey=TEST&format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '3628800'
+      Content-Type:
+      - application/hal+json;charset=utf-8
+      Date:
+      - Wed, 15 Jun 2016 14:56:47 GMT
+      Rate-Limit:
+      - '500000'
+      Rate-Limit-Available:
+      - '499967'
+      Rate-Limit-Over:
+      - '0'
+      Rate-Limit-Reset:
+      - '1466057554290'
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - CMPS=vdKxG2SC1rA1+6xaKosSycxVP9xlFocvjod/cie8mUYdJak5lpwQejGqaYk5v/wE7qZTITYTSqI=;
+        path=/
+      X-Application-Context:
+      - application:local,default,jash1:8080
+      X-Unknown-Params:
+      - format
+      Content-Length:
+      - '579'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"name":"#2 Please do not use, left over from UCV initial acct set
+        up","type":"venue","id":"KovZpZAFnIJA","test":false,"url":"http://ticketmaster.ca/venue/341395","locale":"en-us","postalCode":"K0C1X0","timezone":"America/Toronto","city":{"name":"Morrisburg"},"state":{"name":"Ontario","stateCode":"ON"},"country":{"name":"Canada","countryCode":"CA"},"address":{"line1":"13740
+        County Road 2"},"location":{"longitude":"-75.18635300","latitude":"44.89937100"},"markets":[{"id":"103"}],"dmas":[{"id":519}],"_links":{"self":{"href":"/discovery/v2/venues/KovZpZAFnIJA?locale=en-us"}}}'
+    http_version:
+  recorded_at: Wed, 15 Jun 2016 14:56:48 GMT
+recorded_with: VCR 3.0.3

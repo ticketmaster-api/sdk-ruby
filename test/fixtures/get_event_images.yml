@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://app.ticketmaster.com/discovery/v2/events/1Av8ZfaGkwmkMSH/images?apikey=TEST&format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '3628800'
+      Content-Type:
+      - application/hal+json;charset=utf-8
+      Date:
+      - Wed, 15 Jun 2016 15:00:42 GMT
+      Rate-Limit:
+      - '500000'
+      Rate-Limit-Available:
+      - '499961'
+      Rate-Limit-Over:
+      - '0'
+      Rate-Limit-Reset:
+      - '1466057554290'
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - CMPS=DtiD1z/LnsWC8wi8rLytGXywmPv1fNxJsfWpbpHf5vM+X9cEyXFllApQNBwN+kld; path=/
+      X-Application-Context:
+      - application:local,default,jash1:8080
+      X-Unknown-Params:
+      - format
+      Content-Length:
+      - '1365'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"type":"event","id":"1Av8ZfaGkwmkMSH","images":[{"ratio":"3_2","url":"http://s1.ticketm.net/dam/c/MISC_TABLET_LANDSCAPE_3_2.jpg","width":1024,"height":683,"fallback":true},{"ratio":"16_9","url":"http://s1.ticketm.net/dam/c/MISC_TABLET_LANDSCAPE_LARGE_16_9.jpg","width":2048,"height":1152,"fallback":true},{"ratio":"16_9","url":"http://s1.ticketm.net/dam/c/MISC_TABLET_LANDSCAPE_16_9.jpg","width":1024,"height":576,"fallback":true},{"ratio":"3_2","url":"http://s1.ticketm.net/dam/c/MISC_RETINA_PORTRAIT_3_2.jpg","width":640,"height":427,"fallback":true},{"ratio":"16_9","url":"http://s1.ticketm.net/dam/c/MISC_RECOMENDATION_16_9.jpg","width":100,"height":56,"fallback":true},{"ratio":"3_2","url":"http://s1.ticketm.net/dam/c/MISC_ARTIST_PAGE_3_2.jpg","width":305,"height":203,"fallback":true},{"ratio":"4_3","url":"http://s1.ticketm.net/dam/c/MISC_CUSTOM.jpg","width":305,"height":225,"fallback":true},{"ratio":"16_9","url":"http://s1.ticketm.net/dam/c/MISC_RETINA_PORTRAIT_16_9.jpg","width":640,"height":360,"fallback":true},{"ratio":"16_9","url":"http://s1.ticketm.net/dam/c/MISC_RETINA_LANDSCAPE_16_9.jpg","width":1136,"height":639,"fallback":true},{"ratio":"16_9","url":"http://s1.ticketm.net/dam/c/MISC_EVENT_DETAIL_PAGE_16_9.jpg","width":205,"height":115,"fallback":true}],"_links":{"self":{"href":"/discovery/v2/events/1Av8ZfaGkwmkMSH/images?locale=en-us"}}}'
+    http_version:
+  recorded_at: Wed, 15 Jun 2016 15:00:43 GMT
+recorded_with: VCR 3.0.3
