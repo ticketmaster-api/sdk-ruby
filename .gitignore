@@ -1,2 +1,4 @@
 .ruby-version
 Gemfile.lock
+*.gem
+Gemfile.lock
