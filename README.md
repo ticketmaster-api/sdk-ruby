@@ -33,7 +33,7 @@ For a list of parameters, check http://developer.ticketmaster.com/
 
 Pass optional params to the call via options.params:
 ```
-require 'ticketmaster'
+require 'ticketmaster-sdk'
 
 params = {page: 5, size: 10, source: 'ticketmaster'}
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
@@ -43,7 +43,7 @@ events = response.results
 
 ##### Search Events(options={})
 ```
-require 'ticketmaster'
+require 'ticketmaster-sdk'
 
 params = {page: 5, size: 10, source: 'ticketmaster'}
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
@@ -53,7 +53,7 @@ events = response.results
 
 ##### Get Event (id, options={})
 ```
-require 'ticketmaster'
+require 'ticketmaster-sdk'
 
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
 response = client.get_event('ID OF EVENT')
@@ -62,7 +62,7 @@ events = response.results
 
 ##### Get Event Images (id, options={})
 ```
-require 'ticketmaster'
+require 'ticketmaster-sdk'
 
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
 response = client.get_event_images('ID OF EVENT')
@@ -71,7 +71,7 @@ events = response.results
 
 ##### Search Attractions (options={})
 ```
-require 'ticketmaster'
+require 'ticketmaster-sdk'
 
 params = {page: 5, size: 10, source: 'ticketmaster'}
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
@@ -81,7 +81,7 @@ events = response.results
 
 ##### Get Attraction(id, options={})
 ```
-require 'ticketmaster'
+require 'ticketmaster-sdk'
 
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
 response = client.get_attraction('ID OF ATTRACTION')
@@ -90,7 +90,7 @@ events = response.results
 
 ##### Search Classifications (options={})
 ```
-require 'ticketmaster'
+require 'ticketmaster-sdk'
 
 params = {page: 5, size: 10, source: 'ticketmaster'}
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
@@ -100,7 +100,7 @@ events = response.results
 
 ##### Get Classification (id, options={})
 ```
-require 'ticketmaster'
+require 'ticketmaster-sdk'
 
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
 response = client.get_classification('ID OF CLASSIFICATION')
@@ -109,7 +109,7 @@ events = response.results
 
 ##### Search Venues (options={})
 ```
-require 'ticketmaster'
+require 'ticketmaster-sdk'
 
 params = {page: 5, size: 10, source: 'ticketmaster'}
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
@@ -119,7 +119,7 @@ events = response.results
 
 ##### Get Venue(id, options={})
 ```
-require 'ticketmaster'
+require 'ticketmaster-sdk'
 
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
 response = client.get_venue('ID OF VENUE')
@@ -202,7 +202,7 @@ Methods:
 
 #### Examples:
 ```
-require 'ticketmaster'
+require 'ticketmaster-sdk'
 
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
 response = client.search_events
@@ -211,7 +211,7 @@ event.get_images
 ```
 
 ```
-require 'ticketmaster'
+require 'ticketmaster-sdk'
 
 params = {page: 5, size: 10, source: 'ticketmaster'}
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
@@ -220,7 +220,7 @@ events = response.results
 ```
 
 ```
-require 'ticketmaster'
+require 'ticketmaster-sdk'
 
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
 response = client.search_venues
@@ -229,7 +229,7 @@ venue.address
 ```
 
 ```
-require 'ticketmaster'
+require 'ticketmaster-sdk'
 
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
 response = client.search_events
