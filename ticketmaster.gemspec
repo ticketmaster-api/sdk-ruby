@@ -13,6 +13,7 @@ Gem::Specification.new do |spec|
   spec.description   = "A simple Ruby API wrapper for the Ticketmaster Public APIs"
   spec.files         = ["lib/ticketmaster.rb"]
   spec.license       = 'MIT'
+  spec.homepage      = 'https://github.com/ticketmaster-api/sdk-ruby'
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake", "~> 11.2.2"
