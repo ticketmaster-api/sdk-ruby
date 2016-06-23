@@ -4,6 +4,15 @@ Ruby SDK for the Ticketmaster Open Platform (http://developer.ticketmaster.com/)
 
 Wraps the Ticketmaster API in easy to access functions.
 
+#### Installation
+```
+gem install ticketmaster-api
+```
+or in Gemfile
+```
+gem 'ticketmaster-sdk'
+```
+
 #### WIP Currently Covers:
 1. **Discovery**
  1. Search Events
