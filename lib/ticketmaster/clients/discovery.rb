@@ -76,6 +76,14 @@ module Ticketmaster
         response = request.get
         Result.create(response, request, 'Ticketmaster::Venue')
       end
+
+      def get_legacy_event(id, options={})
+        options[:version] ||= 'v2'
+
+        request  = Request.new("discovery/#{options[:version]}/events/legacy/#{id}", {}, self)
+        response = request.get
+        Result.create(response, request, 'Ticketmaster::Event')
+      end
     end
   end
 end

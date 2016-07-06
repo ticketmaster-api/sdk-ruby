@@ -24,6 +24,7 @@ gem 'ticketmaster-sdk'
  7. Get Attractions
  8. Get Classification
  9. Get Venue
+ 10. Get Legacy Event (legacy Ticketmaster IDs)
 
 #### Methods:
 For a list of parameters, check http://developer.ticketmaster.com/
@@ -39,6 +40,7 @@ For a list of parameters, check http://developer.ticketmaster.com/
 | get_classification     | id            |
 | search_venues          |               |
 | get_venue              | id            |
+| get_legacy_event       | id            |
 
 Pass optional params to the call via options.params:
 ```
@@ -65,8 +67,7 @@ events = response.results
 require 'ticketmaster-sdk'
 
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
-response = client.get_event('ID OF EVENT')
-events = response.results
+event = client.get_event('ID OF EVENT')
 ```
 
 ##### Get Event Images (id, options={})
@@ -75,7 +76,7 @@ require 'ticketmaster-sdk'
 
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
 response = client.get_event_images('ID OF EVENT')
-events = response.results
+images = response.results
 ```
 
 ##### Search Attractions (options={})
@@ -85,7 +86,7 @@ require 'ticketmaster-sdk'
 params = {page: 5, size: 10, source: 'ticketmaster'}
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
 response = client.search_attractions(params: params)
-events = response.results
+attractions = response.results
 ```
 
 ##### Get Attraction(id, options={})
@@ -93,8 +94,7 @@ events = response.results
 require 'ticketmaster-sdk'
 
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
-response = client.get_attraction('ID OF ATTRACTION')
-events = response.results
+attraction = client.get_attraction('ID OF ATTRACTION')
 ```
 
 ##### Search Classifications (options={})
@@ -104,7 +104,7 @@ require 'ticketmaster-sdk'
 params = {page: 5, size: 10, source: 'ticketmaster'}
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
 response = client.search_classifications(params: params)
-events = response.results
+classifications = response.results
 ```
 
 ##### Get Classification (id, options={})
@@ -112,8 +112,7 @@ events = response.results
 require 'ticketmaster-sdk'
 
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
-response = client.get_classification('ID OF CLASSIFICATION')
-events = response.results
+classification = client.get_classification('ID OF CLASSIFICATION')
 ```
 
 ##### Search Venues (options={})
@@ -123,7 +122,7 @@ require 'ticketmaster-sdk'
 params = {page: 5, size: 10, source: 'ticketmaster'}
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
 response = client.search_venues(params: params)
-events = response.results
+venues = response.results
 ```
 
 ##### Get Venue(id, options={})
@@ -131,8 +130,15 @@ events = response.results
 require 'ticketmaster-sdk'
 
 client = Ticketmaster.client(apikey: 'YOUR API KEY')
-response = client.get_venue('ID OF VENUE')
-events = response.results
+venue = client.get_venue('ID OF VENUE')
+```
+
+##### Get Legacy Event(id, options={})
+```
+require 'ticketmaster-sdk'
+
+client = Ticketmaster.client(apikey: 'YOUR API KEY')
+event = client.get_legacy_event('LEGACY TICKETMASTER ID OF EVENT')
 ```
 
 #### Objects:
