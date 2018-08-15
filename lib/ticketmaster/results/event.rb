@@ -8,8 +8,28 @@ module Ticketmaster
       data['name']
     end
 
+    def url
+      data['url']
+    end
+
     def description
       data['description']
+    end
+
+    def please_notes
+      data['pleaseNote']
+    end
+
+    def info
+      data['info']
+    end
+
+    def accessibility
+      data['accessibility'] ? data['accessibility']['info'] : nil
+    end
+
+    def ticket_limit
+      data['ticketLimit'] ? data['ticketLimit']['info'] : nil
     end
 
     def embedded
@@ -30,6 +50,22 @@ module Ticketmaster
 
     def timezone
       dates['timezone']
+    end
+
+    def seatmap
+      data['seatmap'].present? ? data['seatmap']['staticUrl'] : nil
+    end
+
+    def price_ranges
+      data['priceRanges']
+    end
+
+    def sales
+      data['sales']
+    end
+
+    def promoter
+      data['promoters']
     end
 
     def images
