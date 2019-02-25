@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://app.ticketmaster.com/discovery/v2/venues?apikey=TEST&format=json&keyword=INVALIDSEARCHINPUT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '3628800'
+      Content-Type:
+      - application/hal+json;charset=utf-8
+      Date:
+      - Wed, 15 Jun 2016 14:54:36 GMT
+      Rate-Limit:
+      - '500000'
+      Rate-Limit-Available:
+      - '499973'
+      Rate-Limit-Over:
+      - '0'
+      Rate-Limit-Reset:
+      - '1466057554290'
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - CMPS=yftBuRKqgoSfziL1ph4D0MuT/2NrN8BPuIYL1l1jXggkmXwY5j38faYiUwCRt0KpTiltpL+n6lI=;
+        path=/
+      Vary:
+      - Accept-Encoding
+      X-Application-Context:
+      - application:local,default,jphx1:8080
+      X-Unknown-Params:
+      - format
+      Content-Length:
+      - '12118'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"/discovery/v2/venues?countryCode=US&keyword=INVALIDSEARCHINPUT"}},"page":{"size":20,"totalElements":0,"totalPages":0,"number":0}}'
+    http_version:
+  recorded_at: Wed, 15 Jun 2016 14:54:38 GMT
+recorded_with: VCR 3.0.3

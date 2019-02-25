@@ -92,4 +92,13 @@ class ClientTest < Minitest::Test
     end
   end
 
+  def test_search_venues_blank
+    VCR.use_cassette('search_blank') do
+      client = Ticketmaster::Client.new(apikey: 'TEST')
+      results = client.search_venues({params: {keyword: 'INVALIDSEARCHINPUT'}}).results
+
+      assert_equal 0, results.length
+    end
+  end
+
 end
