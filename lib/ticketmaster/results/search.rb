@@ -3,6 +3,8 @@ module Ticketmaster
     attr_accessor :type
 
     def results
+      return [] if data['_embedded'].nil?
+      
       data['_embedded'][type].map do |event|
         Result.create(event, request, "Ticketmaster::#{type.capitalize.chop}")
       end
