@@ -7,8 +7,8 @@ Gem::Specification.new do |spec|
   spec.version       = 1
   spec.authors       = ["Conner Fritz"]
   spec.email         = "conner.fritz@ticketmaster.com"
-  spec.version       = '0.0.05'
-  spec.date          = '2016-08-29'
+  spec.version       = '0.0.06'
+  spec.date          = '2019-02-25'
   spec.summary       = "Ticketmaster Public SDK"
   spec.description   = "A simple Ruby API wrapper for the Ticketmaster Public APIs"
   spec.files         = Dir['lib/**/*.rb'] + Dir['bin/*'] + Dir['[A-Z]*'] + Dir['test/**/*']
