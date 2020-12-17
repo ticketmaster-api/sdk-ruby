@@ -17,6 +17,7 @@ module Ticketmaster
       :source,
       :locale,
       :marketId,
+      :dmaId,
       :startDateTime,
       :endDateTime,
       :includeTBA,
